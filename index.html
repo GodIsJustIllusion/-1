@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Это мой первый вэб-сайт</title>
+    <style>
+        body {
+            background-color: #efd0d0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .menu {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            display: flex;
+        }
+
+        .menu li:not(:last-child) {
+            padding-right: 40px;
+        }
+
+        .wrapper {
+            display: flex;
+            justify-content: center;
+        }
+
+        .cardbox {
+            max-width: 70vw;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 40px;
+            padding: 50px;
+        }
+
+        .card {
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 300px;
+            transition: all 0.5s;
+            border-radius: 15px;
+            background-color: rgb(245 156 156 / 70%);
+        }
+
+        .card:hover {
+            box-shadow: 0px 0px 9px #000;
+        }
+
+        .card:hover .card__image-back {
+            opacity: 1;
+        }
+
+        .card-block {
+            position: relative;
+        }
+
+        .card__image {
+            width: 250px;
+            height: 250px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            transition: all 0.5s;
+        }
+
+        .card__image-back {
+            position: absolute;
+            width: 100%;
+            height: 40%;
+            bottom: 34px;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            background-color: rgb(255 255 255 / 0.5);
+            opacity: 0;
+            transition: all 0.5s;
+        }
+
+        .card__title {
+            margin: 0 0 30px 0;
+            text-align: center;
+        }
+
+        .btn {
+            width: 300px;
+            height: 40px;
+            background-color: #666cff;
+            border: 0;
+            border-radius: 30px;
+            transition: all 1s;
+            cursor: pointer;
+        }
+
+        .btn:hover  {
+            background-color: #fff;
+            transition: all 1s;
+            border: 1px solid;
+            border-color: #666cff;
+        }
+
+        .myBtn {
+            width: 200px;
+            height: 50px;
+            border-bottom-right-radius: 50px;
+            border-top-right-radius: 50px;
+            background-color: #f74040;
+            cursor: pointer;
+            border: 0;
+            transition: all 300ms;
+        }
+
+        .myBtn:hover {
+            width: 250px;
+            transition: all 300ms;
+            box-shadow: 2px 2px 5px #000;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <img class="" src="images/logo.svg" alt="" srcset="">
+        <nav>
+            <ul class="menu">
+                <li>Главная</li>
+                <li>Магазин</li>
+                <li>О нас</li>
+                <li>Карта</li>
+                <li>Контакты</li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+        <div class="cardbox">
+            <div class="card">
+                <div class="card-block">
+                    <img class="card__image" src="images/32132.jpeg" alt="">
+                    <div class="card__image-back"></div>
+                </div>
+
+                <p class="card__title">название название название название название название название название</p>
+                
+                <button class='btn'>
+                    Добавить в избранное
+                </button>
+            </div>
+
+            <div class="card">
+                <div class="card-block">
+                    <img class="card__image" src="images/32132.jpeg" alt="">
+                    <div class="card__image-back"></div>
+                </div>
+                
+                <p class="card__title">название название название название название название название название</p>
+                
+                <button class='btn'>
+                    Добавить в избранное
+                </button>
+            </div>
+
+            <div class="card">
+                <div class="card-block">
+                    <img class="card__image" src="images/32132.jpeg" alt="">
+                    <div class="card__image-back"></div>
+                </div>
+                
+                <p class="card__title">название название название название название название название название</p>
+                
+                <button class='btn'>
+                    Добавить в избранное
+                </button>
+            </div>
+
+            <div class="card">
+                <div class="card-block">
+                    <img class="card__image" src="images/32132.jpeg" alt="">
+                    <div class="card__image-back"></div>
+                </div>
+                
+                <p class="card__title">название название название название название название название название</p>
+                
+                <button class='btn'>
+                    Добавить в избранное
+                </button>
+            </div>
+
+            <div class="card">
+                <div class="card-block">
+                    <img class="card__image" src="images/32132.jpeg" alt="">
+                    <div class="card__image-back"></div>
+                </div>
+                
+                <p class="card__title">название название название название название название название название</p>
+                
+                <button class='btn'>
+                    Добавить в избранное
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- <button class='btn'>
+        Добавить в избранное
+    </button>
+
+    <button class='myBtn'>
+        Добавить в избранное
+    </button> -->
+
+</body>
+
+</html>
